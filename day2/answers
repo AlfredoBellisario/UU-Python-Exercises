@@ -1,0 +1,13 @@
+a) matmult.py
+most time: line 43, where we multiply the lists and store the new values in result
+most memory: as time, but comparable with other lists' creation
+
+b) euler72.py
+Line 53, factorize() - most of the time and memory of the entire code is used here
+
+c) I used numpy. While importing a library (especially big ones) can be time consuming, I compared the time to import random and numpy libraries, and didn't notice an important difference in time.
+I recoded the script and printed each row. Afterwards I realized my output was a numpy array and therefor I decided to stick to the original design of the code adding the method .tolist().
+I was surprised to discover an improvement in speed while printing each row.
+
+Time (numpy array output): 0.2s
+Time (list output): 0.079s
