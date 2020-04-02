@@ -1,7 +1,7 @@
 from math import exp
 import numpy as np
 
-def rbf_network(double[:, :] X,  double[:] beta, double theta):
+def rbf_network_cython(double[:, :] X,  double[:] beta, double theta):
 
     cdef int N = X.shape[0]
     cdef int D = X.shape[1]
